@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ypsilon Travel-Contacto</title>
+        <link rel="stylesheet" href="styles_contacto.css">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <head>
+    <body>
+        <header class>
+            <div class="menu container">
+                
+                    <img class="logo-1" src="imagenes/logo.jpg" alt="">
+                    <input type="checkbox" id="menu">
+                    <label class="material-symbols-outlined" for="menu">menu</label>
+                <nav class="navbar">
+                    
+                    <div class="menu-left">
+                        <ul>
+                            <li class="navbar__item">
+                                <span class="material-symbols-outlined">home</span>
+                                <a href="index.html">inicio</a>
+                            </li>
+                            <li class="navbar__item">
+                                <span class="material-symbols-outlined">pin_drop</span>
+                                <a href="Destinos.html">Destinos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="webpage-logo">
+                        <img class="logo-2" src="imagenes/logo.jpg" alt="">
+                    </div>
+                    <div class="menu-right">
+                        <ul>
+                            <li class="navbar__item">
+                                <span class="material-symbols-outlined">call</span>
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="navbar__item">
+                                <span class="material-symbols-outlined">verified</span>
+                                <a href="Habilitacion.html">Habilitacion</a>
+                            </li>
+                        </ul>
+                    </div>                    
+                    
+                </nav>
+            </div>
+        </header>
+        <form>
+            <h2>
+                Contactenos
+            </h2>
+            <div class="formulario_contacto_input">
+                <label for="Nombre"> Nombre</label>
+                <input type="text" name="username" placeholder="Ingrese Nombre" required id="Nombre">
+            </div>
+            <div class="formulario_contacto_input">
+                <label for="Apellido">Apellido</label>
+                <input type="text"name="surname" placeholder="Ingrese Apellido" required id="Apellido">
+            </div>
+            <div class="formulario_contacto_input">
+                <label for="Email">Email</label>
+                <input type="email"name="email" placeholder="ejemplo@gmail.com" required id="Email">
+            </div>
+            <div class="formulario_contacto_input">
+                <label for="Fecha">Fecha estimada</label>
+                <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+
+                <script>
+                    $(function() {
+                    $('input[name="daterange"]').daterangepicker({
+                        opens: 'left'
+                    }, function(start, end, label) {
+                        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+                    });
+                    });
+                </script>
+            </div>
+            <div class="formulario_contacto_input">
+                <label for="Mensaje">Mensaje</label>
+                <textarea rows="8" placeholder="Ingresá tu mensaje" requiered id="Mensaje">
+                </textarea>
+            </div>
+            <div class="formulario_contacto_input ">           
+            <label>Acepto los terminos y condiciones
+            <input type="checkbox"name="terms"required class="checkbox">
+            </label>
+            </div>
+            <input class="formulario_contacto_input formulario_submit" type="submit"name="submit"required>
+        </form>
+
+    </body>
+</html>
