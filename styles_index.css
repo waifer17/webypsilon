@@ -83,24 +83,51 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 .socials{
     position: fixed;
-    right: 0;
+    width:50px;
+    height:50px;
+    
+    bottom:150px;
+    right:25px;
     z-index:9999;
+
 }
 .social{
-    margin: 0 10px;
-    height: 40px;
-    width: 40px;
-    border: 1px solid rgb(60, 255, 0);
-    border-radius: 50%;
+    border-radius:50px;
+    color:#FFF;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    transition: all 500ms ease;
+    margin: 10px 0 0 0;
 }
-.social:hover{
-    background-color: rgb(29, 177, 127)
+.btn-wsp .social{
+    background: #25d366;
 }
-.social img{
-    margin: 8px 0 0 10px;
+.btn-wsp .social:hover{
+    background: #20ba5a;
+}
+.btn-ig .social{
+    background: #833ab4;
+    background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
+}
+.btn-ig .social:hover{
+    background: #833ab4;
+    background: linear-gradient(to left,#833ab4,#fd1d1d,#fcb045);
+}
+.btn-fb .social{
+    background: #4466ae;
+}
+.btn-fb .social:hover{
+    background: #3b5998;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
 }
 
 .menu .navbar ul li{
