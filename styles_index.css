@@ -81,10 +81,10 @@ body{
 
 
 @media(max-width: 901px){
-    .header img{
+    .logo img{
         text-align: center;
-        height: 50%;
-        width: 100%;
+        height: 30%;
+        width: 30%;
         margin-top: 50px;
 
     }
