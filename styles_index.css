@@ -11,17 +11,24 @@
 body{
     background-image: url(imagenes/logo1.jpg);
     background-position: center center;
-    
     font-family: 'Poppins', sans-serif;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
-.header{
-    text-align: center;
-    margin-bottom: 1em;
+.logo{
+    margin: 500px 0 0 0 ;
 }
-
+.logo img{
+    width: 100px;
+    margin-left: 50px;
+}
+.menu-2{
+    color:#FFF;
+    margin-left: 30px;
+    display: inline;
+    list-style-type: none;
+}
 .socials{
     align-items: center;
     width:50px;
@@ -43,6 +50,12 @@ body{
 .btn-wsp .social:hover{
     background: #20ba5a;
 }
+.btn-mail .social{
+    background: #d33c25;
+}
+.btn-mail .social:hover{
+    background: linear-gradient(to right,#4285F4,#34A853,#FBBC05);;
+}
 .btn-ig .social{
     background: #833ab4;
     background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
@@ -53,26 +66,16 @@ body{
 }
 
 .footer{
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
     color: azure;
-    bottom: 0;
     width: 100%;
     text-align: center;
-    position: absolute;
 }
-.footer h2{
-    font-size: 18px;
-    color: azure;
-    margin-bottom: 0px;
-}
-.footer ul li a{
+
+.footer li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
     font-size: 16px;
-
-    margin-bottom: 5px;
-    display: inline-block;
-
 }
 
 
