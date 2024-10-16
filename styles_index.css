@@ -82,10 +82,8 @@ body{
 
 
 @media(max-width: 901px){
-    .footer{
-        margin-bottom: 10px;
-        max-width: 100%;
-        text-align: center;
+    body{
+        background-size: cover;
     }
     .logo img{
         text-align: center;
