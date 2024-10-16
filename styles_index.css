@@ -17,10 +17,11 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 .logo{
-    margin: 500px 0 0 0 ;
+    margin: auto 0 0 0 ;
 }
 .logo img{
-    width: 100px;
+    max-width: 100px;
+    height: auto;
     margin-left: 50px;
 }
 .menu-2{
@@ -31,8 +32,8 @@ body{
 }
 .socials{
     align-items: center;
-    width:50px;
-    height:50px;
+    max-width:50px;
+    max-height:50px;
     z-index:9999;
 }
 .social{
@@ -67,7 +68,7 @@ body{
 
 .footer{
     color: azure;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -83,10 +84,7 @@ body{
 @media(max-width: 901px){
     .logo img{
         text-align: center;
-        height: 30%;
-        width: 30%;
-        margin-top: 50px;
-
+        margin-top: 10px;
     }
 
 }
