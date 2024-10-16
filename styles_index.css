@@ -85,9 +85,16 @@ body{
     body{
         background-size: cover;
     }
-    .logo img{
+    .logo{
         text-align: center;
-        margin-top: 10px;
     }
-
+    .footer{
+        
+    }
+    .footer li{
+        text-align: center;
+        list-style-type: none;
+        display: list-item;
+        font-size: 16px;
+    }
 }
