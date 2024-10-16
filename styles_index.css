@@ -88,11 +88,10 @@ body{
     .logo{
         text-align: center;
     }
-    .footer{
-        
+    .logo img{
+        margin-left: auto;
     }
     .footer li{
-        text-align: center;
         list-style-type: none;
         display: list-item;
         font-size: 16px;
