@@ -126,4 +126,8 @@ body{
     .menu-2{
         margin-top: 40px;
     }
+    body{
+        min-height: 90vh;
+    }
+        
 }
