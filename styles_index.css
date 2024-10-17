@@ -113,8 +113,7 @@ body{
         width: 40px;
         height: 43px;
         font-size:30px;
-
-        margin: 0;
+        margin: 5px;
     }
     .menu-2 h2{
         display: flex;
@@ -127,7 +126,7 @@ body{
         margin-top: 40px;
     }
     body{
-        min-height: 90vh;
+        min-height: 94vh;
     }
         
 }
