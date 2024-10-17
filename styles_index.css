@@ -9,32 +9,89 @@
     
 }
 body{
-    background-image: url(imagenes/logo1.jpg);
-    background-position: center center;
+    background-color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
-    display: grid;
-    min-height: 97vh;
-    grid-template-rows: auto 1fr auto;
+   
 }
-.logo{
-    margin: auto 0 0 0 ;
+
+.swipper-button-prev::after{
+    font-size: 25px;
 }
-.logo img{
-    max-width: 100px;
-    height: auto;
-    margin-left: 50px;
+.swipper-button-next::after{
+    font-size: 25px;
 }
-.menu-2{
-    color:#FFF;
-    margin-left: 30px;
-    display: inline;
-    list-style-type: none;
+.swipper-button-next{
+    color:#1919e3;
+}
+.swipper-button-prev{
+    color:#1919e3;
+}
+.swipper-pagination-bullet{
+    background-color: aqua;
+    opacity: 1;
+}
+.swipper-pagination-bullet-active{
+    background-color: rgb(255, 21, 0);
+}
+.container{
+    margin: 0;
+    background-color: #d1a162;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+    
+.menu.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+.menu-oculto{
+    display: none;
+}
+.navbar__item{
+    display: flex;
+}
+.navbar__item a{
+    color: inherit;
+    text-decoration: none;
+}
+.navbar__item span{
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+.logo-1{
+    display: none;
+
+}
+.webpage-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-2{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .socials{
-    align-items: center;
-    max-width:50px;
-    max-height:50px;
+    position: fixed;
+    width:50px;
+    height:50px;
+    
+    bottom:150px;
+    right:25px;
     z-index:9999;
+
 }
 .social{
     border-radius:50px;
@@ -51,12 +108,6 @@ body{
 .btn-wsp .social:hover{
     background: #20ba5a;
 }
-.btn-mail .social{
-    background: #d33c25;
-}
-.btn-mail .social:hover{
-    background: linear-gradient(to right,#4285F4,#34A853,#FBBC05);;
-}
 .btn-ig .social{
     background: #833ab4;
     background: linear-gradient(to right,#833ab4,#fd1d1d,#fcb045);
@@ -65,35 +116,212 @@ body{
     background: #833ab4;
     background: linear-gradient(to left,#833ab4,#fd1d1d,#fcb045);
 }
+.btn-fb .social{
+    background: #4466ae;
+}
+.btn-fb .social:hover{
+    background: #3b5998;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .socials{
+        display: none;
+	}
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    padding: 20px;   
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.5s;
+
+}
+.menu .navbar ul li a:hover{
+    color:rgb(29, 177, 127);
+    font-size: 20px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+}
+
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+.slider{
+    display: flex;
+    align-items: center;
+    background-color: #D7DFE2;
+}
+.slider-txt{
+    margin-left: 85px;
+    width: 50%;
+}
+.slider-txt h1{
+    font-size: 70px;
+    color: #FFFFFF;
+    font-weight: 800;
+    padding-right: 20px;
+}
+
+.slider-txt p{
+    font-size: 18px;
+    color: azure;
+    padding-right: 20px;
+}
+.botones{
+    margin-top: 50px;
+}
+.btn-1{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid rgb(29, 177, 127);
+    background-color: rgb(144, 192, 180);
+    color:#FFFFFF;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.btn-1:hover{
+    color:rgb(29, 177, 127);
+    font-size: 20px;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+}
+.slider-img{
+    width: 50;
+}
+.slider-img img{
+    margin-right: 225px;
+    width: 100%;
+    height: 100vh;
+}
 
 .footer{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(144, 192, 180);
+
+}
+.links h4{
+    font-size: 18px;
     color: azure;
-    max-width: 100%;
-    text-align: center;
+    margin-bottom: 25px;
 }
-
-.footer li{
-    list-style-type: none;
-    display: inline;
-    padding-right: 20px;
+.links ul li a{
     font-size: 16px;
+    color: azure;
+    margin-bottom: 5px;
+    display: inline-block;
 }
-
-
 
 @media(max-width: 901px){
-    body{
-        background-size: cover;
+
+
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
     }
-    .logo{
+    .navbar ul li span{
+        display: none;
+    }
+    .logo-1{
+        display: initial;
+        width: 100px;
+        margin: 0;
+    }
+    .logo-2{
+        width: 0;
+    }
+    .container{
+        margin: 0;
+        display: flex;
+    
+    }
+    .material-symbols-outlined{
+        margin: 0;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #8edee4;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+        
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .header-content{
+        padding-top: 30px;
+        margin-top: 50px;
+    }
+    .slider{
+        flex-direction: column;
+    }
+    .slider-txt{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .slider-txt h1{
+        font-size: 50px;
+    }
+    .slider-txt p{
+        font-size: 16px;
+    }
+    .btn-1{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .slider-img{
+        width: 100%;
         text-align: center;
     }
-    .logo img{
-        margin-left: auto;
+    .slider-img img{
+        margin-right: 0px;
+        width: 100%;
     }
-    .footer li{
-        list-style-type: none;
-        display: list-item;
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets,.swiper-pagination-horizontal,
+    .swipper-pagination-custom,
+    .swiper-pagination-fraction{
+        bottom: -7px;
+    }
+    .btn-1{
         font-size: 16px;
+    }
+    .footer{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .links h4{
+        margin: 25px 0px 10px 0px;
     }
 }
