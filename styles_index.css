@@ -27,9 +27,8 @@ body{
 .menu-2 h2{
     display: flex;
     flex-wrap: nowrap;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-right: 10px;
-    height: auto;
     
 }
 .menu-2{
@@ -48,12 +47,12 @@ body{
     max-height:50px;
 }
 .social{
-    width: auto;
-    height: auto;
+    width: 70px;
+    height: 70px;
     border-radius:50px;
     color:#FFF;
     text-align:center;
-    font-size: 3rem;
+    font-size:50px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
     transition: all 500ms ease;
     margin: 10px 20px 0 0;
@@ -110,5 +109,9 @@ body{
         display: list-item;
         font-size: 16px;
     }
-    
+    .social{
+        width: 30px;
+        height: 30px;
+        font-size:25px;
+    }
 }
